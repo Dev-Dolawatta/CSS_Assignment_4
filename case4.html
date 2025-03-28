@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>case_4</title>
+  <style>
+    div{
+      width: 50px;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      border: #ff253a solid 2px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      animation-name: water_bubble;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes water_bubble{
+      from{
+        width: 50px;
+        border-radius: 100%;
+        border: #ff253a solid 2px;
+      }
+      to{
+        width: 300px;
+        border-radius: 100%;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

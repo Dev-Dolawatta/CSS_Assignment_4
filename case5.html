@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 05</title>
+  <link rel="stylesheet" href="assets/lib/normalize.css">
+  <style>
+    section{
+      height: 100vh;
+      width: 100vw;
+
+    }
+    #div{
+      height: 100vh;
+      width: 400vw;
+
+
+      animation-name: try2;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+    .img{
+      margin: 0;
+      display: inline;
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      background-size: cover;
+    }
+    .imgDiv{
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      display: inline;
+    }
+    .imgDiv:first-child{
+      left: 0;
+    }
+    .imgDiv:nth-child(2){
+      left: 100vw;
+    }
+    .imgDiv:nth-child(3){
+      left: 200vw;
+    }
+    .imgDiv:nth-child(4){
+      left: 300vw;
+    }
+    @keyframes try2 {
+      0%{
+        margin-left: 0;
+      }
+      33.5%{
+        margin-left: -100vw;
+      }
+      66.5%{
+        margin-left: -200vw;
+      }
+      100%{
+        margin-left: -300vw;
+      }
+    }
+  </style>
+</head>
+<body>
+<section>
+
+  <div id="div">
+
+    <div class="imgDiv">
+      <img src="assets/img/nature1.jpeg" alt="" class="img">
+    </div>
+
+    <div class="imgDiv">
+      <img src="assets/img/nature2.jpeg" alt="" class="img">
+    </div>
+
+    <div class="imgDiv">
+      <img src="assets/img/nature3.jpeg" alt="" class="img">
+    </div>
+
+    <div class="imgDiv">
+      <img src="assets/img/nature4.jpeg" alt="" class="img">
+    </div>
+
+  </div>
+
+</section>
+</body>
+</html>

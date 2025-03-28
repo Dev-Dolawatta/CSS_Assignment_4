@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 03</title>
+  <link rel="stylesheet" href="assets/lib/normalize.css">
+  <style>
+    body{
+      background-color: black;
+    }
+    section{
+      width: 700px;
+      height: 600px;
+      background-color: white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    div{
+      background-color: blue;
+      height: 80px;
+      width: 150px;
+
+      border-radius: 20px;
+
+      animation-name: animationCase2;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-direction: alternate
+
+    }
+
+    @keyframes animationCase2 {
+      0% {
+        background-color: blue;
+        margin-left: 0;
+        transform: rotate(0deg)
+      }
+      25% {
+        background-color: yellow;
+        transform: rotate(360deg);
+        margin-left: calc(700px - 150px);
+        margin-top: 0;
+      }
+      50% {
+        background-color: red;
+        transform: rotate(0deg);
+        margin-left: calc(700px - 150px);
+        margin-top: calc(600px - 80px);
+      }
+      75% {
+        background-color: deeppink;
+        transform: rotate(360deg);
+        margin-left: 0;
+        margin-top: calc(600px - 80px);
+      }
+      100% {
+        background-color: orange;
+        transform: rotate(0deg);
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div></div>
+</section>
+</body>
+</html>
